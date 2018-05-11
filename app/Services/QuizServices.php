@@ -9,7 +9,8 @@ use App\Models\Job;
 use App\Models\Information;
 use App\Models\Respondents;
 use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\Client; 
+use GuzzleHttp\Client;
+use Validator; 
 
 class QuizServices {
 

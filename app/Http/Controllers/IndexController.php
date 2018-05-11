@@ -22,6 +22,10 @@ class IndexController extends Controller
 
     public function postCheck(Request $request)
     {
+        $this->validate($request, [
+            'number' => 'required|numeric|digits_between:10,14|unique:respondents,no_register'
+        ]);
+
         return $this->service->checkNumber($request);
     }
 

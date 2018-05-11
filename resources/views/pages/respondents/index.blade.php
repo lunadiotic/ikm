@@ -24,6 +24,7 @@
                                     <th>Nomor</th>
                                     <th>Bidang</th>
                                     <th>Jenis</th>
+                                    <th>Tanggal</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -50,6 +51,7 @@
                 {data: 'no_register', name: 'no_register'},
                 {data: 'service_sector', name: 'service_sector'},
                 {data: 'service_type', name: 'service_type'},
+                {data: 'created_at', name: 'created_at'},                
                 {data: 'action', name: 'action', orderable: false, searchable: false}
             ]
         });

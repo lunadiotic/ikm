@@ -14,15 +14,14 @@
                                 <div class="col-md-12">
                                     <div class="form-group{{ $errors->has('tahun') ? ' has-danger' : '' }}">
                                         {!! Form::label('tahun', 'Tahun') !!}
-                                        {!! Form::number('tahun', null, ['class' => $errors->has('tahun') ? 'form-control form-control-danger' : 'form-control', 'required']) !!}
+                                        {!! Form::number('tahun', null, ['class' => $errors->has('tahun') ? 'form-control form-control-danger' : 'form-control', 'required', 'placeholder' => 'Ketik Tahun yang Diinginkan', 'autofocus']) !!}
                                         <small class="form-control-feedback">{{ $errors->first('tahun') }}</small>
                                     </div>
                                 </div>
                             </div>                          
                         </div>
                         <div class="form-actions pull-right">
-                            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
-                            <button type="button" class="btn btn-inverse">Cancel</button>
+                            <button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Tampilkan</button>
                         </div>
                     {!! Form::close() !!}
                 </div>

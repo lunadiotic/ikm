@@ -36,7 +36,7 @@
 												</span>
 												<div class="form-group label-floating">
 													<label class="control-label">Nomor Responden <small>(wajib isi)</small></label>
-													<input name="no_register" type="text" class="form-control" value="{{ session()->get('number') }}">
+													<input name="no_register" type="text" class="form-control" value="{{ session()->get('number') }}" readonly="">
 												</div>
 											</div>
 										</div>
@@ -49,7 +49,7 @@
 												</span>
 												<div class="form-group label-floating">
 													<label class="control-label">Umur <small>(wajib isi)</small></label>
-													<input name="age" type="number" class="form-control" required>
+													<input name="age" type="number" class="form-control" placeholder="Ketik Umur Anda" required>
 												</div>
 											</div>
 										</div>
@@ -61,8 +61,8 @@
 													<i class="material-icons"></i>
 												</span>
 												<div class="form-group label-floating">
-													<label class="control-label">Tahun <small>(wajib isi)</small></label>
-													<input name="year" type="number" class="form-control" required>
+													<label class="control-label">Tahun Lahir <small>(wajib isi)</small></label>
+													<input name="year" type="number" class="form-control" placeholder="Ketik Tahun Lahir Anda" required>
 												</div>
 											</div>
 										</div>

@@ -1,0 +1,1 @@
+<a href="{{ $show_url }}" class="btn btn-sm  btn-info">Show</a>

@@ -58,9 +58,12 @@
 													<span class="input-group-addon">
 														<i class="material-icons"></i>
 													</span>
-													<div class="form-group label-floating">
+													<div class="form-group label-floating{{ $errors->has('number') ? ' is-empty has-error' : '' }}">
 														<label class="control-label">Nomor Perizinan  <small>(wajib isi)</small></label>
-														<input name="number" type="text" class="form-control" required>
+														<input name="number" type="text" class="form-control{{ $errors->has('number') ? ' error' : '' }}" required>
+														@if ($errors->has('number'))
+														<span class="material-input text-danger">{{ $errors->first('number') }}</span>
+														@endif
 													</div>
 												</div>
 											</div>

@@ -25,11 +25,11 @@ class RespondentServices extends GlobalServices {
         $model = Respondents::query();
         return $this->dataTable($model)
                 ->addColumn('action', function($model) { 
-                    return view('layouts.partials._action', [
+                    return view('layouts.partials._action-respondent', [
                         'model' => $model,
                         'show_url' => route('respondent.show', $model->id),
-                        'edit_url' => route('respondent.edit', $model->id),
-                        'delete_url' => route('respondent.destroy', $model->id)
+                        // 'edit_url' => route('respondent.edit', $model->id),
+                        // 'delete_url' => route('respondent.destroy', $model->id)
                     ]);
                 })
                 ->rawColumns(['action'])
