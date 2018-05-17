@@ -48,8 +48,8 @@
 													<i class="material-icons"></i>
 												</span>
 												<div class="form-group label-floating">
-													<label class="control-label">Umur <small>(wajib isi)</small></label>
-													<input name="age" type="number" class="form-control" placeholder="Ketik Umur Anda" required>
+													<label class="control-label">Input Umur Anda <small>(wajib isi)</small></label>
+													<input name="age" type="number" class="form-control" placeholder="" required>
 												</div>
 											</div>
 										</div>
@@ -61,8 +61,8 @@
 													<i class="material-icons"></i>
 												</span>
 												<div class="form-group label-floating">
-													<label class="control-label">Tahun Lahir <small>(wajib isi)</small></label>
-													<input name="year" type="number" class="form-control" placeholder="Ketik Tahun Lahir Anda" required>
+													<label class="control-label">Input Tahun Lahir Anda <small>(wajib isi)</small></label>
+													<input name="year" type="number" class="form-control" placeholder="" required>
 												</div>
 											</div>
 										</div>
